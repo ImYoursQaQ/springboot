@@ -72,6 +72,7 @@ public class BaseConsumerProxy {
             String value = (String) entry.getValue();
             if (key.equals("spring_returned_message_correlation")) {
                 correlationId = value;
+                break;
             }
         }
 

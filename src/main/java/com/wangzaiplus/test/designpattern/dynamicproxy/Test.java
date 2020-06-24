@@ -11,7 +11,7 @@ public class Test {
 //        payService.pay("马云", BigDecimal.TEN);
 
         PayProxy payProxy2 = new PayProxy(new PayServiceImpl());
-        PayServiceImpl payService2 = (PayServiceImpl) payProxy2.getPayProxy();
+        PayService payService2 = (PayService) payProxy2.getPayProxy();
         payService2.pay("马云2", BigDecimal.TEN);
     }
 
